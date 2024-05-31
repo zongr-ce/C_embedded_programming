@@ -1,0 +1,382 @@
+
+Atmel interrupts.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000000  00800200  00800200  00000252  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         000001fe  00000000  00000000  00000054  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .comment      00000030  00000000  00000000  00000252  2**0
+                  CONTENTS, READONLY
+  3 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  00000284  2**2
+                  CONTENTS, READONLY
+  4 .debug_aranges 00000070  00000000  00000000  000002c4  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   00000e50  00000000  00000000  00000334  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 00000c5c  00000000  00000000  00001184  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   000004aa  00000000  00000000  00001de0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  0000010c  00000000  00000000  0000228c  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    0000060e  00000000  00000000  00002398  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    000001a7  00000000  00000000  000029a6  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000060  00000000  00000000  00002b4d  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	71 c0       	rjmp	.+226    	; 0xe4 <__ctors_end>
+   2:	00 00       	nop
+   4:	79 c0       	rjmp	.+242    	; 0xf8 <__bad_interrupt>
+   6:	00 00       	nop
+   8:	77 c0       	rjmp	.+238    	; 0xf8 <__bad_interrupt>
+   a:	00 00       	nop
+   c:	75 c0       	rjmp	.+234    	; 0xf8 <__bad_interrupt>
+   e:	00 00       	nop
+  10:	73 c0       	rjmp	.+230    	; 0xf8 <__bad_interrupt>
+  12:	00 00       	nop
+  14:	71 c0       	rjmp	.+226    	; 0xf8 <__bad_interrupt>
+  16:	00 00       	nop
+  18:	6f c0       	rjmp	.+222    	; 0xf8 <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	b4 c0       	rjmp	.+360    	; 0x186 <__vector_7>
+  1e:	00 00       	nop
+  20:	6b c0       	rjmp	.+214    	; 0xf8 <__bad_interrupt>
+  22:	00 00       	nop
+  24:	69 c0       	rjmp	.+210    	; 0xf8 <__bad_interrupt>
+  26:	00 00       	nop
+  28:	67 c0       	rjmp	.+206    	; 0xf8 <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	65 c0       	rjmp	.+202    	; 0xf8 <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	63 c0       	rjmp	.+198    	; 0xf8 <__bad_interrupt>
+  32:	00 00       	nop
+  34:	61 c0       	rjmp	.+194    	; 0xf8 <__bad_interrupt>
+  36:	00 00       	nop
+  38:	5f c0       	rjmp	.+190    	; 0xf8 <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	5d c0       	rjmp	.+186    	; 0xf8 <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	5b c0       	rjmp	.+182    	; 0xf8 <__bad_interrupt>
+  42:	00 00       	nop
+  44:	59 c0       	rjmp	.+178    	; 0xf8 <__bad_interrupt>
+  46:	00 00       	nop
+  48:	57 c0       	rjmp	.+174    	; 0xf8 <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	55 c0       	rjmp	.+170    	; 0xf8 <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	53 c0       	rjmp	.+166    	; 0xf8 <__bad_interrupt>
+  52:	00 00       	nop
+  54:	51 c0       	rjmp	.+162    	; 0xf8 <__bad_interrupt>
+  56:	00 00       	nop
+  58:	4f c0       	rjmp	.+158    	; 0xf8 <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	4d c0       	rjmp	.+154    	; 0xf8 <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	4b c0       	rjmp	.+150    	; 0xf8 <__bad_interrupt>
+  62:	00 00       	nop
+  64:	49 c0       	rjmp	.+146    	; 0xf8 <__bad_interrupt>
+  66:	00 00       	nop
+  68:	47 c0       	rjmp	.+142    	; 0xf8 <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	45 c0       	rjmp	.+138    	; 0xf8 <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	43 c0       	rjmp	.+134    	; 0xf8 <__bad_interrupt>
+  72:	00 00       	nop
+  74:	41 c0       	rjmp	.+130    	; 0xf8 <__bad_interrupt>
+  76:	00 00       	nop
+  78:	3f c0       	rjmp	.+126    	; 0xf8 <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	3d c0       	rjmp	.+122    	; 0xf8 <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	3b c0       	rjmp	.+118    	; 0xf8 <__bad_interrupt>
+  82:	00 00       	nop
+  84:	39 c0       	rjmp	.+114    	; 0xf8 <__bad_interrupt>
+  86:	00 00       	nop
+  88:	37 c0       	rjmp	.+110    	; 0xf8 <__bad_interrupt>
+  8a:	00 00       	nop
+  8c:	35 c0       	rjmp	.+106    	; 0xf8 <__bad_interrupt>
+  8e:	00 00       	nop
+  90:	33 c0       	rjmp	.+102    	; 0xf8 <__bad_interrupt>
+  92:	00 00       	nop
+  94:	31 c0       	rjmp	.+98     	; 0xf8 <__bad_interrupt>
+  96:	00 00       	nop
+  98:	2f c0       	rjmp	.+94     	; 0xf8 <__bad_interrupt>
+  9a:	00 00       	nop
+  9c:	2d c0       	rjmp	.+90     	; 0xf8 <__bad_interrupt>
+  9e:	00 00       	nop
+  a0:	2b c0       	rjmp	.+86     	; 0xf8 <__bad_interrupt>
+  a2:	00 00       	nop
+  a4:	29 c0       	rjmp	.+82     	; 0xf8 <__bad_interrupt>
+  a6:	00 00       	nop
+  a8:	27 c0       	rjmp	.+78     	; 0xf8 <__bad_interrupt>
+  aa:	00 00       	nop
+  ac:	25 c0       	rjmp	.+74     	; 0xf8 <__bad_interrupt>
+  ae:	00 00       	nop
+  b0:	23 c0       	rjmp	.+70     	; 0xf8 <__bad_interrupt>
+  b2:	00 00       	nop
+  b4:	21 c0       	rjmp	.+66     	; 0xf8 <__bad_interrupt>
+  b6:	00 00       	nop
+  b8:	1f c0       	rjmp	.+62     	; 0xf8 <__bad_interrupt>
+  ba:	00 00       	nop
+  bc:	1d c0       	rjmp	.+58     	; 0xf8 <__bad_interrupt>
+  be:	00 00       	nop
+  c0:	1b c0       	rjmp	.+54     	; 0xf8 <__bad_interrupt>
+  c2:	00 00       	nop
+  c4:	19 c0       	rjmp	.+50     	; 0xf8 <__bad_interrupt>
+  c6:	00 00       	nop
+  c8:	17 c0       	rjmp	.+46     	; 0xf8 <__bad_interrupt>
+  ca:	00 00       	nop
+  cc:	15 c0       	rjmp	.+42     	; 0xf8 <__bad_interrupt>
+  ce:	00 00       	nop
+  d0:	13 c0       	rjmp	.+38     	; 0xf8 <__bad_interrupt>
+  d2:	00 00       	nop
+  d4:	11 c0       	rjmp	.+34     	; 0xf8 <__bad_interrupt>
+  d6:	00 00       	nop
+  d8:	0f c0       	rjmp	.+30     	; 0xf8 <__bad_interrupt>
+  da:	00 00       	nop
+  dc:	0d c0       	rjmp	.+26     	; 0xf8 <__bad_interrupt>
+  de:	00 00       	nop
+  e0:	0b c0       	rjmp	.+22     	; 0xf8 <__bad_interrupt>
+	...
+
+000000e4 <__ctors_end>:
+  e4:	11 24       	eor	r1, r1
+  e6:	1f be       	out	0x3f, r1	; 63
+  e8:	cf ef       	ldi	r28, 0xFF	; 255
+  ea:	d1 e2       	ldi	r29, 0x21	; 33
+  ec:	de bf       	out	0x3e, r29	; 62
+  ee:	cd bf       	out	0x3d, r28	; 61
+  f0:	00 e0       	ldi	r16, 0x00	; 0
+  f2:	0c bf       	out	0x3c, r16	; 60
+  f4:	72 d0       	rcall	.+228    	; 0x1da <main>
+  f6:	81 c0       	rjmp	.+258    	; 0x1fa <_exit>
+
+000000f8 <__bad_interrupt>:
+  f8:	83 cf       	rjmp	.-250    	; 0x0 <__vectors>
+
+000000fa <red_LED_OFF>:
+		_delay_ms(5);
+		if (i == a-1){
+			PORTB |= (1 << LEDG_PIN); // GREEN LED OFF
+		}
+	}
+}
+  fa:	85 b1       	in	r24, 0x05	; 5
+  fc:	80 64       	ori	r24, 0x40	; 64
+  fe:	85 b9       	out	0x05, r24	; 5
+ 100:	08 95       	ret
+
+00000102 <red_LED_ON>:
+ 102:	85 b1       	in	r24, 0x05	; 5
+ 104:	8f 7b       	andi	r24, 0xBF	; 191
+ 106:	85 b9       	out	0x05, r24	; 5
+ 108:	08 95       	ret
+
+0000010a <green_LED_OFF>:
+ 10a:	e2 e0       	ldi	r30, 0x02	; 2
+ 10c:	f1 e0       	ldi	r31, 0x01	; 1
+ 10e:	80 81       	ld	r24, Z
+ 110:	80 62       	ori	r24, 0x20	; 32
+ 112:	80 83       	st	Z, r24
+ 114:	08 95       	ret
+
+00000116 <green_LED_ON>:
+ 116:	e2 e0       	ldi	r30, 0x02	; 2
+ 118:	f1 e0       	ldi	r31, 0x01	; 1
+ 11a:	80 81       	ld	r24, Z
+ 11c:	8f 7d       	andi	r24, 0xDF	; 223
+ 11e:	80 83       	st	Z, r24
+ 120:	08 95       	ret
+
+00000122 <LED_init>:
+
+void LED_init(void){
+	DDRB |= (1 << DDB6);		//Setting data direction for red LED to "output"
+ 122:	84 b1       	in	r24, 0x04	; 4
+ 124:	80 64       	ori	r24, 0x40	; 64
+ 126:	84 b9       	out	0x04, r24	; 4
+	DDRH |= (1 << DDH5);		//Setting data direction for green LED to "output"
+ 128:	e1 e0       	ldi	r30, 0x01	; 1
+ 12a:	f1 e0       	ldi	r31, 0x01	; 1
+ 12c:	80 81       	ld	r24, Z
+ 12e:	80 62       	ori	r24, 0x20	; 32
+ 130:	80 83       	st	Z, r24
+ 132:	08 95       	ret
+
+00000134 <SWITCH_init>:
+}
+void SWITCH_init(void){
+	DDRE &= ~(1 << DDE6);
+ 134:	8d b1       	in	r24, 0x0d	; 13
+ 136:	8f 7b       	andi	r24, 0xBF	; 191
+ 138:	8d b9       	out	0x0d, r24	; 13
+	PORTE |= (1 << int6_SWITCH_PIN); //Enabling PULL-UP on the switch for INT0
+ 13a:	8e b1       	in	r24, 0x0e	; 14
+ 13c:	80 64       	ori	r24, 0x40	; 64
+ 13e:	8e b9       	out	0x0e, r24	; 14
+	
+	DDRB &= ~(1 << DDB4);
+ 140:	84 b1       	in	r24, 0x04	; 4
+ 142:	8f 7e       	andi	r24, 0xEF	; 239
+ 144:	84 b9       	out	0x04, r24	; 4
+	PORTB |= (1 << pcint4_SWITCH_PIN); //Enabling PULL-UP on the switch for PCINT0
+ 146:	85 b1       	in	r24, 0x05	; 5
+ 148:	80 61       	ori	r24, 0x10	; 16
+ 14a:	85 b9       	out	0x05, r24	; 5
+ 14c:	08 95       	ret
+
+0000014e <INTERRUPTS_init>:
+}
+void INTERRUPTS_init(void){
+	
+	EICRB |= (1 << ISC60);	// with ISC00 and ISC01 both set to 1, the rising edge of INT0 generates asynchronously an interrupt request
+ 14e:	ea e6       	ldi	r30, 0x6A	; 106
+ 150:	f0 e0       	ldi	r31, 0x00	; 0
+ 152:	80 81       	ld	r24, Z
+ 154:	80 61       	ori	r24, 0x10	; 16
+ 156:	80 83       	st	Z, r24
+							// When changing the ISCn1/ISCn0 bits, the interrupt must be disabled by clearing its Interrupt Enable bit
+	EICRB |= (1 << ISC61);	// in the EIMSK Register. Otherwise an interrupt can occur when the bits are changed.
+ 158:	80 81       	ld	r24, Z
+ 15a:	80 62       	ori	r24, 0x20	; 32
+ 15c:	80 83       	st	Z, r24
+	
+	EIMSK |= (1 << int6_SWITCH_PIN);	// enables interrupt 6 (INT6)
+ 15e:	8d b3       	in	r24, 0x1d	; 29
+ 160:	80 64       	ori	r24, 0x40	; 64
+ 162:	8d bb       	out	0x1d, r24	; 29
+	
+	// EIFR |= (1 << INTF0);	// Clearing the interrupt flag (The flag is also cleared when the interrupt routine is executed.)
+	
+	PCICR |= (1 << PCIE0);	// Enabling pin change interrupt 0 (PCICR0)
+ 164:	e8 e6       	ldi	r30, 0x68	; 104
+ 166:	f0 e0       	ldi	r31, 0x00	; 0
+ 168:	80 81       	ld	r24, Z
+ 16a:	81 60       	ori	r24, 0x01	; 1
+ 16c:	80 83       	st	Z, r24
+	
+	PCMSK0 |= (1 << pcint4_SWITCH_PIN); //enables the Pin Change Interrupt (PB4)
+ 16e:	eb e6       	ldi	r30, 0x6B	; 107
+ 170:	f0 e0       	ldi	r31, 0x00	; 0
+ 172:	80 81       	ld	r24, Z
+ 174:	80 61       	ori	r24, 0x10	; 16
+ 176:	80 83       	st	Z, r24
+	
+	sei();					// sets global interrupts by writing a 1 to the I-bit (interrupt-bit) in the Status Register (SREG)
+ 178:	78 94       	sei
+ 17a:	08 95       	ret
+
+0000017c <sleep_init>:
+void sleep_init(void){
+	/* SMCR &= ~(1 << SM0);		|
+	SMCR |= (1 << SM1);			| This is bit manipulating the Sleep Mode Control Register to activate the "Power-Down" Sleep Code
+	SMCR &= ~(1 << SM2);		|
+	*/
+	set_sleep_mode(SLEEP_MODE_PWR_DOWN); // This is doing the same thing using a library
+ 17c:	83 b7       	in	r24, 0x33	; 51
+ 17e:	81 7f       	andi	r24, 0xF1	; 241
+ 180:	84 60       	ori	r24, 0x04	; 4
+ 182:	83 bf       	out	0x33, r24	; 51
+ 184:	08 95       	ret
+
+00000186 <__vector_7>:
+}
+
+ISR (INT6_vect){
+ 186:	1f 92       	push	r1
+ 188:	0f 92       	push	r0
+ 18a:	0f b6       	in	r0, 0x3f	; 63
+ 18c:	0f 92       	push	r0
+ 18e:	11 24       	eor	r1, r1
+ 190:	0b b6       	in	r0, 0x3b	; 59
+ 192:	0f 92       	push	r0
+ 194:	2f 93       	push	r18
+ 196:	3f 93       	push	r19
+ 198:	4f 93       	push	r20
+ 19a:	5f 93       	push	r21
+ 19c:	6f 93       	push	r22
+ 19e:	7f 93       	push	r23
+ 1a0:	8f 93       	push	r24
+ 1a2:	9f 93       	push	r25
+ 1a4:	af 93       	push	r26
+ 1a6:	bf 93       	push	r27
+ 1a8:	ef 93       	push	r30
+ 1aa:	ff 93       	push	r31
+	if ((PINE & (1 << int6_SWITCH_PIN))){
+ 1ac:	66 9b       	sbis	0x0c, 6	; 12
+ 1ae:	02 c0       	rjmp	.+4      	; 0x1b4 <__vector_7+0x2e>
+		red_LED_ON();
+ 1b0:	a8 df       	rcall	.-176    	; 0x102 <red_LED_ON>
+		green_LED_ON();
+ 1b2:	b1 df       	rcall	.-158    	; 0x116 <green_LED_ON>
+ 1b4:	ff 91       	pop	r31
+		//red_LED_OFF();
+		//_delay_ms(100);
+		//green_LED_OFF();
+		//red_LED_OFF();
+	}
+}
+ 1b6:	ef 91       	pop	r30
+ 1b8:	bf 91       	pop	r27
+ 1ba:	af 91       	pop	r26
+ 1bc:	9f 91       	pop	r25
+ 1be:	8f 91       	pop	r24
+ 1c0:	7f 91       	pop	r23
+ 1c2:	6f 91       	pop	r22
+ 1c4:	5f 91       	pop	r21
+ 1c6:	4f 91       	pop	r20
+ 1c8:	3f 91       	pop	r19
+ 1ca:	2f 91       	pop	r18
+ 1cc:	0f 90       	pop	r0
+ 1ce:	0b be       	out	0x3b, r0	; 59
+ 1d0:	0f 90       	pop	r0
+ 1d2:	0f be       	out	0x3f, r0	; 63
+ 1d4:	0f 90       	pop	r0
+ 1d6:	1f 90       	pop	r1
+ 1d8:	18 95       	reti
+
+000001da <main>:
+ 1da:	a3 df       	rcall	.-186    	; 0x122 <LED_init>
+}*/
+
+int main(void)
+{
+	LED_init();
+	SWITCH_init();
+ 1dc:	ab df       	rcall	.-170    	; 0x134 <SWITCH_init>
+	INTERRUPTS_init();
+ 1de:	b7 df       	rcall	.-146    	; 0x14e <INTERRUPTS_init>
+ 1e0:	cd df       	rcall	.-102    	; 0x17c <sleep_init>
+	sleep_init();
+ 1e2:	1c 9b       	sbis	0x03, 4	; 3
+	
+    while (1) 
+    {
+		if ((PINB & (1 << pcint4_SWITCH_PIN))){
+ 1e4:	fe cf       	rjmp	.-4      	; 0x1e2 <main+0x8>
+ 1e6:	89 df       	rcall	.-238    	; 0xfa <red_LED_OFF>
+			red_LED_OFF();
+ 1e8:	90 df       	rcall	.-224    	; 0x10a <green_LED_OFF>
+ 1ea:	83 b7       	in	r24, 0x33	; 51
+			green_LED_OFF();
+ 1ec:	81 60       	ori	r24, 0x01	; 1
+ 1ee:	83 bf       	out	0x33, r24	; 51
+			sleep_mode();
+ 1f0:	88 95       	sleep
+ 1f2:	83 b7       	in	r24, 0x33	; 51
+ 1f4:	8e 7f       	andi	r24, 0xFE	; 254
+ 1f6:	83 bf       	out	0x33, r24	; 51
+ 1f8:	f4 cf       	rjmp	.-24     	; 0x1e2 <main+0x8>
+
+000001fa <_exit>:
+ 1fa:	f8 94       	cli
+
+000001fc <__stop_program>:
+ 1fc:	ff cf       	rjmp	.-2      	; 0x1fc <__stop_program>
